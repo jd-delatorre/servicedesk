@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon-96x96.png">
+
+    <title>Service Desk</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Font Awesome Stylesheet -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <!-- Styles -->
+    <link href="css/styles.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container hideoverflow">
+      <div class="row borderright">
+        <div class="col-md-4 sdleftpanel">
+        <!-- Left Side of Service Desk Screen -->
+
+          <img src="images/mainservicedeskicon.png" title="Service Desk" alt="Service Desk Icon" class="sdicon">
+          <img src="images/numbericon.png" class="sddialicon">
+          
+        </div> <!-- /.col-md-4 -->
+
+        <div class="col-md-8">
+              <!-- Right Side of Service Desk Screen -->
+
+            <button class="requestbutton">My Requests</button>
+            <button class="back"><div class="leftarrowback"></div> Back</button>
+
+                <div class="mainoptionscontainer">
+                  <div class="horizontal clearfix">
+
+                  <!-- Main Options -->
+                    <ul class="mainsd" id="mainoptions">
+                      <li id="hardware" data-mainoption="#hardwaredata"><a href="#">Computer</a> <div class="mainpanelimg hardwareimg"></div></li>
+                      <li id="phone" data-mainoption="#phonedata"><a href="#">Phone</a> <div class="mainpanelimg phoneimg"></div></li>
+                      <li id="permissions" data-mainoption="#permissiondata"><a href="#">Permissions</a> <div class="mainpanelimg permissionsimg"></div></li>
+                      <li id="printers" data-mainoption="#printerdata"><a href="#">Printers</a> <div class="mainpanelimg printersimg"></div></li>
+                      <li id="cognos" data-mainoption="#cognosdata"><a href="#">Cognos</a> <div class="mainpanelimg cognosimg"></div></li>
+                      <li id="unix" data-mainoption="#unixdata"><a href="#">UNIX</a> <div class="mainpanelimg uniximg"></div></li>
+                    </ul>
+
+
+                    <!-- *********************************************************************************************************************** -->
+                    <!-- ************************************* Hardware Section **************************************************************** -->
+                    <!-- *********************************************************************************************************************** -->
+
+                    <ul class="servicedesk hide" id="hardwaredata">
+                      <li><a href="#" class="firstline">Computer</a> <div class="mainpanelimg hardwareimg firstline"></div></li>
+                        <li><!-- Accordion of sections -->
+                        <div class="panel-group" id="hardwareaccordion" role="tablist" aria-multiselectable="true">
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading active" role="tab" id="headingOne" data-toggle="collapse" data-parent="#hardwareaccordion" href="#collapsePc" aria-expanded="true" aria-controls="collapseOne">
+                              <h4 class="panel-title">
+                                <a role="button">
+                                  <div class="computersectionimg"><span class="pcicon"></span></div><div class="computersectiontext"><span>PC<br/><span>For issues with your computer</span></span><div class="downarrow"></div></div>
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapsePc" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="panel-body">
+                                <ul class="sdsuboptions rightborder">
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="New PC issue"><div class="suboptionimg"><span class="newpcicon"></span></div><div class="suboptiontext"><span>New PC</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="PC BSOD or Rebooting issue"><div class="suboptionimg"><span class="pcbsodicon"></span></div><div class="suboptiontext"><span>PC BSOD or Rebooting</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="PC can't log-in issue"><div class="suboptionimg"><span class="pccanticon"></span></div><div class="suboptiontext"><span>PC can't log-in</span></div></a></li>
+                                </ul>
+                                <ul class="sdsuboptions">
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="PC making noise issue"><div class="suboptionimg"><span class="pcmakingnoiseicon"></span></div><div class="suboptiontext"><span>PC making noise</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="PC not booting issue"><div class="suboptionimg"><span class="pcnotbootingicon"></span></div><div class="suboptiontext"><span>PC not booting</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="PC slow issue"><div class="suboptionimg"><span class="pcslowicon"></span></div><div class="suboptiontext"><span>PC slow</span></div></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel-heading bordertop" data-toggle="modal" data-target="#serviceModal" data-service="Mac, for issues with MAC or connections to the macxserve drives">
+                            <div class="panel-title">
+                              <a href="#">
+                                  <div class="computersectionimg padtop5"><span class="macicon"></span></div><div class="computersectiontext"><span>Mac<br/><span>For issues with MAC or connections to the macxserve drives</span></span></div>
+                                </a>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree" data-toggle="collapse" data-parent="#hardwareaccordion" href="#collapseLaptop" aria-expanded="false" aria-controls="collapseThree">
+                              <h4 class="panel-title">
+                                <a class="collapsed" role="button">
+                                  <div class="computersectionimg"><span class="laptopicon"></span></div><div class="computersectiontext"><span>Applications issue/setup<br/><span>For issues with a...</span></span><div class="downarrow"></div></div>
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseLaptop" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                <ul class="sdsuboptions rightborder">
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Adobe suite applications issue"><div class="suboptionimg"><span class="adobeicon"></span></div><div class="suboptiontext"><span>Adobe suite applications</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Alchemy issue"><div class="suboptionimg"><span class="alchemyicon"></span></div><div class="suboptiontext"><span>Alchemy</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Anti-virus issue"><div class="suboptionimg"><span class="antivirusicon"></span></div><div class="suboptiontext"><span>Anti-virus</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Browser issue"><div class="suboptionimg"><span class="browsersicon"></span></div><div class="suboptiontext"><span>Browsers</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="MS Office issue"><div class="suboptionimg"><span class="msofficeicon"></span></div><div class="suboptiontext"><span>MS Office</span></div></a></li>
+                                </ul>
+                                <ul class="sdsuboptions">
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="ODBC issue"><div class="suboptionimg"><span class="odbcicon"></span></div><div class="suboptiontext"><span>ODBC</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Other issue"><div class="suboptionimg"><span class="othericon"></span></div><div class="suboptiontext"><span>Other</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="PDF issue"><div class="suboptionimg"><span class="pdficon"></span></div><div class="suboptiontext"><span>PDF</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Unix-Zoc reflecion issue"><div class="suboptionimg"><span class="unixzoicon"></span></div><div class="suboptiontext"><span>Unix-Zoc reflecion</span></div></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                           <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree" data-toggle="collapse" data-parent="#hardwareaccordion" href="#collapsePeripherals" aria-expanded="false" aria-controls="collapseSix">
+                              <h4 class="panel-title">
+                                <a href="#" class="collapsed" role="button">
+                                  <div class="computersectionimg"><span class="peripheralsicon"></span></div><div class="computersectiontext"><span>Peripherals<br/><span>For issues with keyboards, mice, scanners, and other devices</span></span><div class="downarrow"></div></div>
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapsePeripherals" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                <ul class="sdsuboptions rightborder">
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Barcode scanner issue"><div class="suboptionimg"><span class="barcodeicon"></span></div><div class="suboptiontext"><span>Barcode scanner</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Document scanner issue"><div class="suboptionimg"><span class="documenticon"></span></div><div class="suboptiontext"><span>Document scanner</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Honeywell scanner issue"><div class="suboptionimg"><span class="honeywellicon"></span></div><div class="suboptiontext"><span>Honeywell scanner</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Keyboard or mouse issue"><div class="suboptionimg"><span class="keyboardicon"></span></div><div class="suboptiontext"><span>Keyboard or mouse</span></div></a></li>
+                                </ul>
+                                <ul class="sdsuboptions">
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Monitor issue issue"><div class="suboptionimg"><span class="monitoricon"></span></div><div class="suboptiontext"><span>Monitor issue</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="New monitor issue"><div class="suboptionimg"><span class="newmonitoricon"></span></div><div class="suboptiontext"><span>New monitor</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Other issue"><div class="suboptionimg"><span class="other2icon"></span></div><div class="suboptiontext"><span>Other</span></div></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="PC Headphone issue"><div class="suboptionimg"><span class="pcheadphoneicon"></span></div><div class="suboptiontext"><span>PC Headphone</span></div></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <!-- *********************************************************************************************************************** -->
+                    <!-- ************************************* Phone Section **************************************************************** -->
+                    <!-- *********************************************************************************************************************** -->
+
+                    <ul class="servicedesk hide newmix" id="phonedata">
+                      <li><a href="#" class="firstline">Phone</a> <div class="mainpanelimg phoneimg firstline"></div></li>
+                     <!-- Accordion of sections -->
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Phone issue">
+                        <div class="lineicon"><span class="phoneissueicon"></span></div><div class="linetext singleline"><span>Phone issue</span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Headset issue for issues with a headset, headsetbox, or missing headset pieces.">
+                        <div class="lineicon"><span class="headsetmainicon"></span></div><div class="linetext"><span>Headset issue<br/><span>For issues with a headset, headsetbox, or missing headset pieces. <img src="images/infoicon.png"/> </span></span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Voice Mail Password Reset">
+                        <div class="lineicon"><span class="recordingicon"></span></div><div class="linetext singleline"><span>Voice Mail Password Reset</span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Move Phone">
+                        <div class="lineicon"><span class="movephoneicon"></span></div><div class="linetext singleline"><span>Move Phone</span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="New Phone">
+                        <div class="lineicon"><span class="newphoneicon"></span></div><div class="linetext singleline"><span>New Phone</span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Change user Status (Do Not Disturb)">
+                        <div class="lineicon"><span class="changeusericon"></span></div><div class="linetext singleline"><span>Change user Status (Do Not Disturb)</span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Android Set Up / Issue">
+                        <div class="lineicon"><span class="androidphoneicon"></span></div><div class="linetext singleline"><span>Android Set Up / Issue</span></div>
+                      </a></li>
+                    </ul>
+
+                    <!-- *********************************************************************************************************************** -->
+                    <!-- ************************************* Permission Section **************************************************************** -->
+                    <!-- *********************************************************************************************************************** -->
+
+                    <ul class="servicedesk hide newmix" id="permissiondata">
+                      <li><a href="#" class="firstline">Permissions</a> <div class="mainpanelimg permissionsimg firstline"></div></li>
+                     <!-- Accordion of sections -->
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Unix, for permissions to specific paths in Unix, Gillani, or to copy a profile to another user">
+                        <div class="lineicon"><span class="unix2icon"></span></div><div class="linetext"><span>Unix<br/><span>For permissions to specific paths in Unix, Gillani, or to copy a profile to another user</span></span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Unix Shortcuts/Profile, for shortcut creation to a search path in Unix, to copy shortcuts from another user, or to add another window">
+                        <div class="lineicon"><span class="unixshortcutsicon"></span></div><div class="linetext"><span>Unix Shortcuts/Profile<br/><span>For shortcut creation to a search path in Unix, to copy shortcuts from another user, or to add another window</span></span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Folders, to add or change permissions to folders on the Y:, S:, or P:, drives">
+                        <div class="lineicon"><span class="foldericon"></span></div><div class="linetext"><span>Folders<br/><span>To add or change permissions to folders on the Y:, S:, or P:, drives</span></span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Cognos, for general Cognos access, or access to specific Reports and Cubes">
+                        <div class="lineicon"><span class="cognos2icon"></span></div><div class="linetext"><span>Cognos<br/><span>For general Cognos access, or access to specific Reports and Cubes</span></span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Bugzilla, for Green and Blue Bugzilla permissions">
+                        <div class="lineicon"><span class="bugzillaicon"></span></div><div class="linetext"><span>Bugzilla<br/><span>For Green and Blue Bugzilla permissions</span></span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Web Access, to request access to a blocked web site">
+                        <div class="lineicon"><span class="webaccessicon"></span></div><div class="linetext"><span>Web Access<br/><span>To request access to a blocked web site</span></span></div>
+                      </a></li>
+                    </ul>
+
+                    <!-- *********************************************************************************************************************** -->
+                    <!-- ************************************* Printer Section **************************************************************** -->
+                    <!-- *********************************************************************************************************************** -->
+
+                    <ul class="servicedesk hide newmix" id="printerdata">
+                      <li><a href="#" class="firstline">Printers</a> <div class="mainpanelimg printersimg firstline"></div></li>
+                     <!-- Accordion of sections -->
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Ctrl-p printer issue">
+                        <div class="lineicon"><span class="ctrlpicon"></span></div><div class="linetext singleline"><span>Ctrl-p printer issue</span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Epson printer issue">
+                        <div class="lineicon"><span class="epsonicon"></span></div><div class="linetext singleline"><span>Epson printer issue</span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Laser printer issue">
+                        <div class="lineicon"><span class="lasericon"></span></div><div class="linetext singleline"><span>Laser printer issue</span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Ithaca printer issue">
+                        <div class="lineicon"><span class="ithacaicon"></span></div><div class="linetext singleline"><span>Ithaca printer issue</span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Zebra printer issue">
+                        <div class="lineicon"><span class="zebraicon"></span></div><div class="linetext singleline"><span>Zebra printer issue</span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Toner Issue">
+                        <div class="lineicon"><span class="tonericon"></span></div><div class="linetext singleline"><span>Toner</span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="New Printer set up">
+                        <div class="lineicon"><span class="printermainicon"></span></div><div class="linetext singleline"><span>New Printer set up</span></div>
+                      </a></li>
+
+                    </ul>
+
+                    <!-- *********************************************************************************************************************** -->
+                    <!-- ************************************* Cognos Section **************************************************************** -->
+                    <!-- *********************************************************************************************************************** -->
+                    
+                    <ul class="servicedesk hide newmix" id="cognosdata">
+                      <li><a href="#" class="firstline">Cognos</a> <div class="mainpanelimg cognosimg firstline"></div></li>
+                     <!-- Accordion of sections -->
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="New Report, to have a new report created">
+                        <div class="lineicon"><span class="newreporticon"></span></div><div class="linetext"><span>New Report<br/><span>To have a new report created</span></span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Data Feed (DW), create new or modify existing Data Feed to 3rd party software">
+                        <div class="lineicon"><span class="datafeedicon"></span></div><div class="linetext"><span>Data Feed (DW)<br/><span>Create new or modify existing Data Feed to 3rd party software</span></span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Modify Report to have a change made to a report">
+                        <div class="lineicon"><span class="modifyicon"></span></div><div class="linetext"><span>Modify Report<br/><span>To have a change made to a report</span></span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Report Data Issues, Report ran but there was no data, or data is wrong or incomplete">
+                        <div class="lineicon"><span class="reportdataicon"></span></div><div class="linetext"><span>Report Data Issues<br/><span>Report ran but there was no data, or data is wrong or incomplete</span></span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Report Issues/Schedule, Reports/Cubes not running or errors">
+                        <div class="lineicon"><span class="reportissuesicon"></span></div><div class="linetext"><span>Report Issues/Schedule Changes<br/><span>Reports/Cubes not running or errors</span></span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Cognos - Report/Cube Access to specific folders, reports or cubes">
+                        <div class="lineicon"><span class="cognosreporticon"></span></div><div class="linetext"><span>Cognos - Report/Cube Access<br/><span>For access to specific folders, reports or cubes</span></span></div>
+                      </a></li>
+
+                    </ul>
+
+                    <!-- *********************************************************************************************************************** -->
+                    <!-- ************************************* Unix Section **************************************************************** -->
+                    <!-- *********************************************************************************************************************** -->
+                    
+                    <ul class="servicedesk hide newmix" id="unixdata">
+                      <li><a href="#" class="firstline">Unix</a> <div class="mainpanelimg uniximg firstline"></div></li>
+                     <!-- Accordion of sections -->
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Unix Bug problems with an order, payment, or specific data in Unix">
+                        <div class="lineicon"><span class="unixbugicon"></span></div><div class="linetext"><span>Unix Bug<br/><span>Problems with an order, payment, or specific data in "Unix"</span></span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Unix Enhancement if you wish to change or enchance a Unix program">
+                        <div class="lineicon"><span class="unixenhancementicon"></span></div><div class="linetext"><span>Unix Enhancement<br/><span>If you wish to change or enhance a Unix program</span></span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Unix Permissions">
+                        <div class="lineicon"><span class="unixpermissionsicon"></span></div><div class="linetext singleline"><span>Permissions</span></div>
+                      </a></li>
+
+                      <li><a href="#" data-toggle="modal" data-target="#serviceModal" data-service="Unix Shortscuts / Profile">
+                        <div class="lineicon"><span class="unixshortcutsicon"></span></div><div class="linetext"><span>Unix Shortcuts/Profile<br/><span>For shortcut creation to a specific path in Unix, to copy shortcuts from another user, 
+                        or to add another window</span></span></div>
+                      </a></li>
+
+                    </ul>
+
+                  </div> <!-- /.horizontal -->
+
+                </div> <!-- /.mainoptionscontainer -->
+
+          </div><!-- /.col-md-8 Closing bracket of right side -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="serviceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeicon.png"/></span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label for="subject">Subject</label><br/>
+              <input type="text" id="subject"/><br/><br/>
+
+              <label for="note">Note</label><br/>
+              <textarea id="note" rows=8></textarea>
+
+              <div class="greybox">
+                <div class="modalcontainer inputheight">
+                  <div class="fileuploadcontainer">
+                    <img src="images/uploadicon.png" class="filebutton"/><input type="text" class="fileinput" placeholder="Upload file..."/><input type="file" class="fileinputmain"/>
+                  </div>
+
+                </div>
+                <div class="modalcontainer rightalign">
+
+                  <label for="computernumber">Computer #</label>
+                  <input type="text" id="computernumber"/><br/>
+
+                  <label for="phoneext">Phone Ex #</label>
+                  <input type="text" id="phoneext"/><br/>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary submitbutton">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>

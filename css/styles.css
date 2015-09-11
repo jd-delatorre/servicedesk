@@ -1,0 +1,1012 @@
+/*Body bg color */
+body{
+	background-color: #dcdcdc;
+}
+
+.row{
+	background-color: #ffffff;
+}
+
+.container{
+	box-shadow: 0 10px 50px rgba(0,0,0,0.75);
+	-webkit-box-shadow:0 10px 50px rgba(0,0,0,0.75);
+	-moz-box-shadow:0 10px 50px rgba(0,0,0,0.75);
+}
+
+/*Utility classes*/
+
+.flleft{
+	float:left;
+}
+
+.borderright{
+	border-right:10px solid #63a8c1;
+}
+
+.marlef50{
+	padding-left:50px!important;
+}
+
+.padtop20{
+	padding-top:20px!important;
+}
+
+.padtop5{
+	padding-top:5px!important;
+}
+
+.padtop15{
+	padding-top:15px!important;
+}
+
+/*Main Page Styles*/
+
+/*Left Side Panel*/
+.sdleftpanel{
+	background-color:#63a8c1;
+	text-align: center;
+}
+
+.sdicon{
+	margin-top:75px;
+}
+
+.sddialicon{
+    display: block;
+    margin: 0 auto;
+    margin-top: 70%;
+}
+
+/*Right side panel*/
+.requestbutton{
+	width:182px;
+	height:43px;
+	border-radius:30px;
+	font-size:18px;
+	border:none;
+	outline:none;
+	float:right;
+	margin:15px;
+	color:#909292;
+	background-color: #e4e4e4;
+}
+
+/*Main Service Desk Options*/
+.mainsd > li,
+.servicedesk > li{
+	list-style-type: none;
+	font-size:23px;
+	height:80px;
+	border-bottom:1px solid #b0b0b0;
+	position: relative;
+}
+
+.mainsd > li:hover,
+.servicedesk > li:hover{
+	cursor:pointer;
+}
+
+.servicedesk > li{
+	border-bottom:none;
+}
+
+.servicedesk > li:not(:first-child){
+	font-size:12px;
+}
+
+.mainsd > li:hover{
+	background-color: #77b1c6;
+}
+
+.mainsd > li > a,
+.servicedesk > li:first-child > a{
+	color:#63a8c1;
+	position: relative;
+	top:23px;
+	left:10px;
+}
+
+.servicedesk > li > a{
+	color:#b5b5b5;
+	position: relative;
+	top:23px;
+	left:35px;
+	display: inline-block;
+}
+
+.mainsd > li:hover > a{
+	color:#fff;
+}
+
+.mainsd > li > .mainpanelimg,
+.servicedesk > li:first-child > img, 
+.servicedesk > li:first-child > div{
+	position:absolute;
+	right:25px;
+	top:14px;
+}
+
+.newmix > li > a{
+	width:100%;
+	top: inherit;
+    padding-top: 10px;
+    left:inherit;
+}
+
+.newmix > li > .firstline{
+	padding-top:0;
+}
+
+.newmix > li > img.firstline,
+.newmix > li > div.firstline{
+	top:5px;
+}
+
+.newmix > li > a.firstline{
+	top:15px!important;
+	cursor:default;
+}
+
+.newmix > li > a > div > span{
+	color: #787878;
+	font-size:18px;
+	line-height: 16px;
+}
+
+.newmix > li > a > div > span > span{
+	font-size: 12px;
+}
+
+.newmix > li{
+	border-bottom: 1px solid #b0b0b0;
+	height:72px;
+}
+
+.newmix .lineicon{
+	padding-top:10px;
+}
+
+.newmix .linetext.singleline{
+	padding-top:20px;
+}
+
+.newmix > li:hover{
+	background-color: #ebebeb;
+}
+
+.newmix > li:first-child:hover{
+	background-color: transparent;
+}
+
+.computersectionimg{
+	display: inline-block;
+	width:12%;
+	float:left;
+	padding-top:10px;
+	height:58px;
+}
+
+.computersectiontext{
+	display: inline-block;
+	width:85%;
+	color: #787878;
+	padding-top:8px;
+	line-height: 18px;
+}
+
+.computersectiontext > span > span{
+	font-size: 12px;
+}
+
+.computersectiontext > .downarrow{
+	margin-top:-5px;
+	margin-right:0;
+}
+
+.suboptionimg{
+	display: inline-block;
+	width:15%;
+	float:left;
+	height:25px;
+}
+
+.suboptiontext{
+	display: inline-block;
+	width:85%;
+}
+
+.lineicon{
+    width: 12%;
+    display: inline-block;
+    text-align: left;
+    float: left;
+    padding-left:15px;
+}
+
+.linetext{
+	width:85%;
+	display: inline-block;
+	padding-top:8px;
+}
+
+.mainsd,
+.servicedesk{
+	display: inline-block;
+	width:681px;
+	float:left;
+}
+
+.mainsd > li > span, 
+.servicedesk > li:first-child > span{
+	font-size:14px;
+}
+
+.servicedesk > li:first-child{
+	border-bottom:5px solid #63a8c1;
+	cursor: default;
+}
+
+.mainoptionscontainer{
+	margin:50px auto;
+	width: 75%;
+	overflow: hidden;
+}
+
+.optionscontainer{
+	margin:200px auto;
+	width:55%;
+}
+
+a:hover,
+a:active,
+a:focus{
+	text-decoration: none;
+	outline: none;
+}
+
+.horizontal{
+	width:2500px;
+}
+
+.back{
+	margin-top:20px;
+	background-color:transparent;
+	border:none;
+	color:#63a8c1;
+	font-size:24px;
+	text-transform: uppercase;
+	visibility: hidden;
+	margin-bottom:130px;
+}
+
+.back:focus{
+	outline:none;
+}
+
+.downarrow{
+	float:right;
+	margin-top:20px;
+	margin-right:10px;
+	background: url('../images/downarrow.png') no-repeat;
+    width: 27px;
+    height: 11px;
+}
+
+.active .downarrow{
+	background: url('../images/uparrow.png') no-repeat;
+}
+
+/* overriding bootstrap panel heading */
+.panel-default > .panel-heading{
+	background-color: transparent;
+	border-color: transparent;
+	height:70px;
+}
+
+.panel{
+	border:none;
+	border-top: 1px solid #b0b0b0;
+}
+
+.panel-default > .panel-heading +.panel-collapse > .panel-body {
+    border-top-color: #b0b0b0;
+}
+
+.panel-heading.active + .collapse.in{
+	border-bottom: 2px solid #b0b0b0;
+}
+
+.panel-title{
+	font-size:18px;
+}
+
+.panel-title > a > span{
+	display: inline-block;
+	padding-left:40px;
+	color:#787878;
+}
+ 
+.single .panel-title > a > img{
+	float:left;
+}
+
+.single .panel-title > a > span{
+	margin-top:15px;
+}
+
+.smallicon{
+	margin-top:20px!important;
+}
+
+.doubleline .panel-title > a > span{
+	margin-top:inherit;
+}
+
+.panel-title > a > span > span{
+	font-size:12px;
+}
+
+.panel-title > a > img:first-child{
+	vertical-align: inherit;
+	margin-top:10px;
+}
+
+.panel-title > a > img.laptopicon:first-child{
+	margin-top:20px;
+}
+
+.panel-body{
+	padding:0;
+}
+
+.sdsuboptions{
+	list-style-type: none;
+	display: inline-block;
+	color:#b5b5b5;
+	font-size:14px;
+	width:50%;
+	float:left;
+	padding-left: 0;
+}
+
+.sdsuboptions > li{
+	padding:10px 35px;
+}
+
+.sdsuboptions > li > a > span{
+	margin-left:10px;
+}
+
+.sdsuboptions > li > a{
+	color: #838383;
+    font-size: 15px;
+}
+
+.sdsuboptions > li:hover{
+	background-color: #e7e7e7;
+}
+.collapse.in{
+	background-color: #f2f2f2;
+}
+
+.rightborder{
+	border-right: 1px solid #b5b5b5;
+}
+
+.bordertop{
+	border-top: 1px solid #b0b0b0;
+}
+
+.panel-group .panel-heading.borderbottom,
+.panel-group .panel-default:last-child,
+.panel-group .panel-heading:last-child{
+	border-bottom:1px solid #b0b0b0;
+}
+
+.longpanel > span{
+	width:88%;
+}
+
+.longpanel > img,
+.panel-title > a.longpanel > img:first-child{
+	vertical-align: 80%;
+}
+
+.panel-group .panel,
+.panel-heading{
+	border-radius:0;
+}
+
+.panel-group .panel + .panel{
+	margin-top:0;
+}
+
+.panel-heading{
+	min-height: 72px;
+}
+
+.panel-heading:hover{
+	background-color: #ebebeb;
+}
+
+/* Modal Overrides */
+.modal-backdrop.in{
+	opacity:.6;
+}
+
+.modal-backdrop{
+	background-color: #fff;
+}
+
+#subject,
+#note{
+	width:100%;
+}
+
+.modal-body label{
+	color:#54879a;
+	font-family: arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.modal-body .greybox label{
+	color:#9b9e9f;
+	font-size: 18px;
+}
+
+.modal-header, 
+.modal-footer{
+	background-color: #487586;
+	color: #fff;
+	height:75px;
+	padding-top:22px;
+}
+
+.submitbutton,
+.submitbutton:hover{
+	background-color: #63a8c1;
+	border-color: transparent;
+}
+
+.greybox{
+	background-color: #e6e6e6;
+	padding:15px;
+	border-bottom: 3px solid #c7c7c7;
+	margin-bottom:60px;
+}
+
+.modalcontainer{
+	display: inline-block;
+	float:left;
+	width:48%;
+}
+
+input[type=file]{
+	background-color: #fff;
+	height:58px;
+}
+
+.fileuploadcontainer{
+	position: relative;
+}
+
+.filebutton,
+.fileinput{
+	position: absolute;
+}
+
+.filebutton{
+	z-index: 1;
+	top:2px;
+}
+
+.fileinputmain{
+	z-index: 2;
+	opacity: 0;
+	position: absolute;
+}
+
+.inputheight{
+	height: 10px;
+}
+
+input[type=text],
+textarea{
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    outline: none;
+	padding:0 10px;
+}
+
+textarea{
+	padding:10px;
+}
+
+input[type=text].fileinput{
+	left: 47px;
+    top: 10px;
+    padding-left:16px;
+}
+
+input[type=text]{
+	height:40px;
+}
+
+.rightalign{
+	text-align: right;
+}
+
+#computernumber,
+#phoneext{
+	height:30px;
+	width:100px;
+}
+
+.hideoverflow{
+	overflow: hidden;
+}
+
+.modal-header .close{
+	opacity: 1;
+}
+
+.modal-lg {
+	width: 80%;
+}
+
+/* Responsive */
+
+@media(max-width: 1276px){
+	.sdicon{
+		width:80%;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+	.sdleftpanel{
+		max-height: 400px;
+	}
+
+	.sddialicon{
+		margin-top: 50px;
+		width:25%;
+	}
+
+	.mainoptionscontainer{
+		width:100%;
+	}
+
+	.hideoverflow{
+		overflow: visible;
+	}
+
+	.sdicon{
+		width:35%;
+		margin-top:25px;
+	}
+
+	.back{
+		margin-bottom:15px;
+	}
+
+	.mainsd, .servicedesk{
+		padding-left:0;
+	}
+
+	.borderright{
+		border-right:none;
+	}
+
+	.back{
+		margin-left: auto;
+	}
+
+	.mainsd,
+	.servicedesk{
+		float:none;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+	.sdleftpanel{
+		max-height: 350px;
+	}
+
+	.sddialicon{
+		width:35%;
+	}
+
+	.sdicon{
+		width:35%;
+	}
+}
+
+/* Horizontally and vertically centering modal */
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal {
+  text-align: center;
+}
+
+/* Sprites */
+.hardwareimg, .phoneimg, .printersimg,
+.cognosimg, .uniximg, .permissionsimg,
+.leftarrowback, .pcicon, .macicon, .laptopicon,
+.peripheralsicon, .newpcicon, .pcbsodicon,
+.pccanticon, .pcmakingnoiseicon, .pcnotbootingicon,
+.pcslowicon, .adobeicon, .alchemyicon,
+.antivirusicon, .browsersicon, .msofficeicon,
+.odbcicon, .othericon, .pdficon, .unixzoicon,
+.barcodeicon, .documenticon, .honeywellicon,
+.monitoricon, .keyboardicon, .newmonitoricon,
+.other2icon, .pcheadphoneicon, .phoneissueicon,
+.headsetmainicon, .recordingicon, .movephoneicon,
+.newphoneicon, .changeusericon, .androidphoneicon,
+.unix2icon, .unixshortcutsicon, .foldericon, .cognos2icon,
+.bugzillaicon, .webaccessicon, .ctrlpicon, .epsonicon, 
+.lasericon, .ithacaicon, .zebraicon, .tonericon, .printermainicon,
+.newreporticon, .datafeedicon, .modifyicon, .reportdataicon,
+.reportissuesicon, .cognosreporticon, .unixbugicon, .unixenhancementicon, 
+.unixpermissionsicon{
+	background:url('../images/icons.png');
+	background-repeat: no-repeat;
+}
+.hardwareimg, .phoneimg, .printersimg, 
+.cognosimg, .uniximg, .permissionsimg,
+.pcicon, .macicon, .laptopicon,
+.peripheralsicon, .phoneissueicon,
+.headsetmainicon{
+	width:51px;
+	height:51px;
+}
+
+.newpcicon, .pcbsodicon, .pccanticon,
+.pcmakingnoiseicon, .pcnotbootingicon, .pcslowicon,
+.adobeicon{
+	display: inline-block;
+	width:27px;
+	height:27px;
+}
+
+.adobeicon, .alchemyicon, .antivirusicon,
+.browsersicon, .msofficeicon, .odbcicon,
+.othericon, .pdficon, .unixzoicon, 
+.barcodeicon, .documenticon, .honeywellicon,
+.keyboardicon, .monitoricon, .newmonitoricon,
+.other2icon, .pcheadphoneicon{
+	display: inline-block;
+	width:31px;
+	height:31px;
+	position: relative;
+    top: -4px;
+}
+
+.phoneissueicon, .headsetmainicon, .recordingicon,
+.movephoneicon, .newphoneicon, .changeusericon, 
+.androidphoneicon, .unix2icon, .unixshortcutsicon,
+.foldericon, .cognos2icon, .bugzillaicon, .webaccessicon, 
+.ctrlpicon, .epsonicon, .lasericon, .ithacaicon, .zebraicon,
+.tonericon, .printermainicon, .newreporticon, .datafeedicon,
+.modifyicon, .reportdataicon, .reportissuesicon, .cognosreporticon,
+.unixbugicon, .unixenhancementicon, .unixpermissionsicon{
+	display: inline-block;
+	width:51px;
+	height:51px;
+	position: relative;
+	top:-5px;
+}
+
+/* PC Sublevel */
+.newpcicon{
+	background-position: -154px -684px;
+}
+
+.pcbsodicon{
+	background-position: -158px -726px;
+}
+
+.pccanticon{
+	background-position: -158px -773px;
+}
+
+.pcmakingnoiseicon{
+	background-position: -235px -684px;
+}
+
+.pcnotbootingicon{
+	background-position: -236px -728px;	
+}
+
+.pcslowicon{
+	background-position: -237px -773px;
+}
+
+/* Applications Sublevel */
+.adobeicon{
+	background-position: -310px -683px;
+}
+
+.alchemyicon{
+	background-position: -311px -728px;
+}
+
+.antivirusicon{
+	background-position: -311px -773px;
+}
+
+.browsersicon{
+	background-position: -310px -818px;
+}
+
+.msofficeicon{
+	background-position: -310px -863px;
+}
+
+.odbcicon{
+	background-position: -385px -685px;
+}
+
+.othericon{
+	background-position: -385px -728px;
+}
+
+.pdficon{
+	background-position: -385px -775px;
+}
+
+.unixzoicon{
+	background-position: -385px -820px;
+}
+
+/* Peripherals Sublevel */
+
+.barcodeicon{
+	background-position: -462px -682px;
+}
+
+.documenticon{
+	background-position: -462px -726px;
+}
+
+.honeywellicon{
+	background-position: -462px -772px;
+}
+
+.keyboardicon{
+	background-position: -462px -818px;
+}
+
+.monitoricon{
+	background-position: -538px -682px;
+}
+
+.newmonitoricon{
+	background-position: -538px -728px;
+}
+
+.other2icon{
+	background-position: -538px -772px;
+}
+
+.pcheadphoneicon{
+	background-position: -538px -818px;
+}
+
+/*Computer Top Level Icons*/
+.pcicon{
+	background-position: -154px -159px;
+	display: inline-block;
+}
+
+.macicon{
+	background-position: -154px -227px;
+	display: inline-block;
+}
+
+.laptopicon{
+	background-position: -154px -308px;
+	display: inline-block;
+}
+
+.peripheralsicon{
+	background-position: -154px -385px;
+	display: inline-block;
+}
+
+/* Phone Top Level Icons */
+.phoneissueicon{
+	background-position: -229px -155px;
+}
+
+.headsetmainicon{
+	background-position: -229px -227px;
+}
+
+.recordingicon{
+	background-position: -229px -299px;
+}
+
+.movephoneicon{
+	background-position: -229px -375px;
+}
+
+.newphoneicon{
+	background-position: -229px -449px;
+}
+
+.changeusericon{
+	background-position: -229px -523px;
+}
+
+.androidphoneicon{
+	background-position: -229px -598px;
+}
+
+/* Permissions Section */
+.unix2icon{
+	background-position: -305px -154px;
+}
+
+.unixshortcutsicon{
+	background-position: -305px -229px;
+}
+
+.foldericon{
+	background-position: -305px -304px;
+}
+
+.cognos2icon{
+	background-position: -305px -379px;
+}
+
+.bugzillaicon{
+	background-position: -305px -452px;
+}
+
+.webaccessicon{
+	background-position: -305px -527px;
+}
+
+/* Printers Section */
+.ctrlpicon{
+	background-position: -380px -154px;
+}
+
+.epsonicon{
+	background-position: -380px -226px; 
+}
+
+.lasericon{
+	background-position: -380px -302px;
+}
+
+.ithacaicon{
+	background-position: -380px -377px;
+}
+
+.zebraicon{
+	background-position: -380px -452px;
+}
+
+.tonericon{
+	background-position: -380px -524px;
+}
+
+.printermainicon{
+	background-position: -380px -597px;
+}
+
+/* Cognos Section */
+.newreporticon{
+	background-position: -458px -154px;
+}
+
+.datafeedicon{
+	background-position: -458px -226px;
+}
+
+.modifyicon{
+	background-position: -458px -302px; 
+}
+
+.reportdataicon{
+	background-position: -458px -379px;
+}
+
+.reportissuesicon{
+	background-position: -458px -454px;
+}
+
+.cognosreporticon{
+	background-position: -458px -530px;
+}
+
+/* Unix Section */
+.unixbugicon{
+	background-position: -534px -158px;
+}
+
+.unixenhancementicon{
+	background-position: -534px -232px;
+}
+
+.unixpermissionsicon{
+	background-position: -534px -301px;
+}
+
+
+/* Main Page Icons and Hover */
+.hardwareimg{
+	background-position: -8px -213px;
+}
+
+.mainsd > li:hover > .hardwareimg{
+	background-position: -72px -213px;
+}
+
+.phoneimg{
+	background-position: -8px -292px;
+}
+
+.mainsd > li:hover > .phoneimg{
+	background-position: -72px -292px;
+}
+
+.permissionsimg{
+	background-position: -8px -370px;
+}
+
+.mainsd > li:hover > .permissionsimg{
+	background-position: -72px -370px;
+}
+
+.printersimg{
+	background-position: -8px -449px;
+}
+
+.mainsd > li:hover > .printersimg{
+	background-position: -72px -449px;
+}
+
+.cognosimg{
+	background-position: -8px -527px;
+}
+
+.mainsd > li:hover > .cognosimg{
+	background-position: -72px -527px;
+}
+
+.uniximg{
+	background-position: -8px -606px;
+}
+
+.mainsd > li:hover > .uniximg{
+	background-position: -72px -606px;
+}
+
+.leftarrowback{
+	margin-top:-5px;
+	width:23px;
+	height:37px;
+	background-position: -89px -678px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
